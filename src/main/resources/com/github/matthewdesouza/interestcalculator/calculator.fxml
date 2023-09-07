@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.github.matthewdesouza.interestcalculator.LoanCalculatorController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <HBox spacing="10">
+        <Label text="Annual Interest Rate:" minWidth="150"/>
+        <TextField fx:id="tfInterestRate" promptText="e.g., 12"/>
+    </HBox>
+    <HBox spacing="10">
+        <Label text="Number of Years:" minWidth="150"/>
+        <TextField fx:id="tfNumberOfYears" promptText="e.g., 10"/>
+    </HBox>
+    <HBox spacing="10">
+        <Label text="Loan Amount:" minWidth="150"/>
+        <TextField fx:id="tfLoanAmount" promptText="e.g., 120000"/>
+    </HBox>
+    <HBox spacing="10">
+        <Label text="Monthly Payment:" minWidth="150"/>
+        <TextField fx:id="tfMonthlyPayment" editable="false"/>
+    </HBox>
+    <HBox spacing="10">
+        <Label text="Total Payment:" minWidth="150"/>
+        <TextField fx:id="tfTotalPayment" editable="false"/>
+    </HBox>
+    <HBox spacing="10">
+        <Button text="Reset" fx:id="btnReset" HBox.hgrow="ALWAYS"/>
+        <Pane HBox.hgrow="ALWAYS"/>
+        <Button text="Quit" fx:id="btnQuit" HBox.hgrow="ALWAYS"/>
+        <Pane HBox.hgrow="ALWAYS"/>
+        <Button text="Calculate" fx:id="btnCalculate" HBox.hgrow="ALWAYS"/>
+    </HBox>
+</VBox>

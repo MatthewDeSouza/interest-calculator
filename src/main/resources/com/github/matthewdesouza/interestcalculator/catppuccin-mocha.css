@@ -1,0 +1,26 @@
+.root {
+    -fx-background-color: #1e1e2e;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #cdd6f4;
+}
+
+.Label, .label {
+    -fx-text-fill: #cdd6f4;
+}
+
+.TextField {
+    -fx-background-color: #313244;
+    -fx-border-color: #cdd6f4;
+    -fx-text-fill: #cdd6f4;
+}
+
+.Button {
+    -fx-background-color: #313244;
+    -fx-text-fill: #cdd6f4;
+    -fx-border-color: #cdd6f4;
+}
+
+.Button:hover {
+    -fx-background-color: #45475a;
+    -fx-text-fill: #1e1e2e;
+}
